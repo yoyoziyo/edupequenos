@@ -1,2 +1,0 @@
-import { StoreHeader } from "@/components/store-header";import { StoreFooter } from "@/components/store-footer";
-export default function Page(){return <><StoreHeader/><main className="page-shell legal-page"><h1>Como comprar</h1><ol><li>Escolha um material e adicione ao carrinho.</li><li>Informe nome, e-mail e WhatsApp no checkout.</li><li>Faça o pagamento pelo método disponível.</li><li>Após a confirmação, receba o acesso no seu e-mail.</li></ol><p>Você não precisará criar uma conta ou guardar uma senha.</p></main><StoreFooter/></>}

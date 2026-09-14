@@ -1,4 +1,0 @@
-import Link from "next/link";
-import { BookOpen, ShoppingCart } from "lucide-react";
-import { formatPrice, type Product } from "@/data/products";
-export function ProductCard({product}:{product:Product}){return <article className="product-card"><Link href={`/produto/${product.slug}`} className="product-cover" style={{background:product.color}}>{product.badge&&<span className="product-badge">{product.badge}</span>}<BookOpen size={48} strokeWidth={1.6}/><b>{product.name}</b><small>{product.type}</small></Link><div className="product-info"><span className="eyebrow">{product.category}</span><Link href={`/produto/${product.slug}`}><h3>{product.name}</h3></Link><p>{product.type} · {product.schoolYears.join(", ")}</p><div className="product-bottom"><strong>{formatPrice(product.price)}</strong><button aria-label={`Adicionar ${product.name} ao carrinho`}><ShoppingCart size={19}/></button></div></div></article>}

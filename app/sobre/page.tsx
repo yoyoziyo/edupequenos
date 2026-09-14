@@ -1,2 +1,0 @@
-import { StoreHeader } from "@/components/store-header";import { StoreFooter } from "@/components/store-footer";
-export default function Page(){return <><StoreHeader/><main className="page-shell legal-page"><h1>Sobre a EduPequenos</h1><p>A EduPequenos cria materiais digitais para ajudar educadores a preparar aulas criativas, acolhedoras e significativas nos anos iniciais.</p><p>Esta página receberá a história e os dados definitivos da marca antes do lançamento.</p></main><StoreFooter/></>}
