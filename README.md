@@ -4,17 +4,17 @@ Loja estática de materiais pedagógicos digitais, preparada para funcionar dire
 
 ## Estrutura
 
-- `index.html`: página inicial e catálogo.
+- `index.html`: página inicial e vitrine completa.
 - `produto.html`: página individual preenchida pelo produto selecionado.
-- `pagina.html`: páginas institucionais.
-- `products.js`: cadastro central de produtos.
-- `app.js`: busca, filtros e montagem dos cards.
-- `styles.css`: todo o visual responsivo.
-- `assets/`: imagens otimizadas em WebP.
+- `data/products.json`: cadastro central de produtos.
+- `js/`: busca, montagem dos cards e página individual.
+- `css/style.css`: todo o visual responsivo.
+- `pages/`: páginas institucionais e legais.
+- `assets/`: logotipo, ícones SVG e imagens WebP.
 
 ## Adicionar um produto
 
-Duplique um item dentro de `products.js`, escolha um `slug` único e preencha seus dados. A home e a página individual passarão a usar o novo produto automaticamente.
+Duplique um item dentro de `data/products.json`, escolha um `slug` único e preencha seus dados. A home, a busca e a página individual passarão a usar o novo produto automaticamente.
 
 Capas e prévias públicas podem ser colocadas em `assets/products/<slug>/`. PDFs pagos não devem ser enviados para este repositório público; futuramente ficarão em armazenamento privado e serão liberados após o pagamento.
 
