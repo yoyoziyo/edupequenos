@@ -1,0 +1,2 @@
+import { StoreHeader } from "@/components/store-header";import { StoreFooter } from "@/components/store-footer";
+export default function Page(){return <><StoreHeader/><main className="page-shell legal-page"><h1>Fale conosco</h1><p>Os canais oficiais de e-mail e WhatsApp serão publicados aqui antes da abertura da loja.</p><p>Se você tiver dificuldade para receber um material, informe o nome e o e-mail usados na compra para agilizar o atendimento.</p></main><StoreFooter/></>}

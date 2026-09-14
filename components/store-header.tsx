@@ -1,0 +1,6 @@
+"use client";
+import Link from "next/link";
+import { Menu, Search, ShoppingCart, X } from "lucide-react";
+import { useState } from "react";
+const links = ["Datas comemorativas","Livros infantis","Atividades","Kits","Por ano escolar","Disciplinas"];
+export function StoreHeader(){ const [open,setOpen]=useState(false); return <header className="site-header"><div className="topbar page-shell"><Link className="brand" href="/" aria-label="EduPequenos - início"><span className="brand-mark" aria-hidden>📖</span><span><strong>Edu<span>Pequenos</span></strong><small>Grandes ideias para um futuro melhor</small></span></Link><form className="search" action="/" role="search"><input name="busca" aria-label="Buscar materiais" placeholder="O que você procura hoje?"/><button aria-label="Pesquisar"><Search size={21}/></button></form><button className="cart" aria-label="Abrir carrinho"><ShoppingCart size={25}/><span>0</span><b>Carrinho</b></button><button className="menu-button" onClick={()=>setOpen(!open)} aria-expanded={open} aria-label="Abrir menu">{open?<X/>:<Menu/>}</button></div><nav className={open?"nav open":"nav"} aria-label="Navegação principal"><div className="page-shell nav-inner"><Link href="/">Início</Link>{links.map(label=><Link key={label} href={`/?categoria=${encodeURIComponent(label)}`}>{label}</Link>)}</div></nav></header> }
